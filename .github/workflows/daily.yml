@@ -25,4 +25,4 @@ jobs:
           git config user.email "bot@gleanhub"
           git add trending.json
           git diff --cached --quiet || git commit -m "Update trending $(date +'%Y-%m-%d')"
-          git push
+          git pull --rebase && git push
