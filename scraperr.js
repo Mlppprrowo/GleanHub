@@ -31,7 +31,7 @@ function request(options, body) {
 
 async function main() {
   // 用GitHub搜索API找今日最热门仓库
-  const result = await get("https://api.github.com/search/repositories?q=created:%3E2026-06-24&sort=stars&order=desc&per_page=10");
+  const result = await get("https://api.github.com/search/repositories?q=stars:%3E1000&sort=stars&order=desc&per_page=10");
   const data = JSON.parse(result);
   console.log("API返回:", JSON.stringify(data).slice(0, 500));
   
