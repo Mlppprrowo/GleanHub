@@ -2,7 +2,13 @@ const https = require("https");
 
 function get(url) {
   return new Promise((resolve, reject) => {
-    https.get(url, { headers: { "User-Agent": "GleanHub" } }, (res) => {
+    https.get(url, { 
+      headers: { 
+        "User-Agent": "GleanHub",
+        "Accept": "application/vnd.github+json",
+        "Authorization": `token ${process.env.GITHUB_TOKEN}`
+      } 
+    }, (res) => {
       let data = "";
       res.on("data", c => data += c);
       res.on("end", () => resolve(data));
@@ -24,25 +30,23 @@ function request(options, body) {
 }
 
 async function main() {
-  const html = await get("https://github.com/trending");
-  const matches = [...html.matchAll(/href="\/([a-zA-Z0-9_.-]+\/[a-zA-Z0-9_.-]+)" data-hydro-click/g)];
-  const seen = new Set();
-  const repos = [];
-  for (const m of matches) {
-    const full = m[1];
-    if (!seen.has(full) && repos.length < 10) {
-      seen.add(full);
-      const [author, name] = full.split("/");
-      repos.push({ author, name, url: `https://github.com/${full}` });
-    }
-  }
+  // 用GitHub搜索API找今日最热门仓库
+  const result = await get("https://api.github.com/search/repositories?q=created:%3E2026-06-24&sort=stars&order=desc&per_page=10");
+  const data = JSON.parse(result);
+  
+  const repos = data.items.map(r => ({
+    author: r.owner.login,
+    name: r.name,
+    url: r.html_url,
+    description: r.description || "",
+    stars: r.stargazers_count
+  }));
 
   const token = process.env.GITHUB_TOKEN;
   const owner = process.env.GITHUB_REPOSITORY.split("/")[0];
   const repo = process.env.GITHUB_REPOSITORY.split("/")[1];
   const content = Buffer.from(JSON.stringify(repos, null, 2)).toString("base64");
 
-  // 先获取现有文件的sha
   let sha;
   try {
     const existing = await get(`https://api.github.com/repos/${owner}/${repo}/contents/trending.json`);
