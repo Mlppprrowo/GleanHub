@@ -30,4 +30,4 @@ jobs:
           git reset --hard origin/main
           git add trending.json
           git diff --cached --quiet || git commit -m "Update trending $(date +'%Y-%m-%d')"
-          git push origin main
+          git push --force origin main
