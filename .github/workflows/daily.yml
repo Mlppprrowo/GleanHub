@@ -2,19 +2,21 @@ name: Daily Trending Scraper
 
 on:
   schedule:
-    - cron: '0 1 * * *'  # 每天北京时间早上9点
-  workflow_dispatch:       # 允许手动触发
+    - cron: '0 1 * * *'
+  workflow_dispatch:
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Run scraper
         run: node scraper.js
@@ -25,5 +27,4 @@ jobs:
           git config user.email "bot@gleanhub"
           git add trending.json
           git diff --cached --quiet || git commit -m "Update trending $(date +'%Y-%m-%d')"
-          git pull --rebase origin main
-          git push origin main
+          git push
