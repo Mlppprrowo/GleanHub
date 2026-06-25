@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: '24'
       - name: Run scraper
-        run: node scraper.js
+        run: node scraperr.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 # 之前的方案一直用 git push 来上传文件，本质上是把Actions当成一个普通的git用户在操作，每次都要先拉代码、再提交、再推送，这个流程很容易因为远程仓库状态不一致导致冲突。
