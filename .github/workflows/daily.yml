@@ -28,6 +28,7 @@ jobs:
           git config user.email "bot@gleanhub"
           git fetch origin main
           git reset --hard origin/main
+          node scraper.js
           git add trending.json
           git diff --cached --quiet || git commit -m "Update trending $(date +'%Y-%m-%d')"
-          git push --force origin main
+          git push origin main
