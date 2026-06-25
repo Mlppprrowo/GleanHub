@@ -1,34 +1,21 @@
 name: Daily Trending Scraper
-
 on:
   schedule:
     - cron: '0 1 * * *'
   workflow_dispatch:
-
 jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          ref: main
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '24'
-
       - name: Run scraper
         run: node scraper.js
-
-      - name: Commit trending.json
-        run: |
-          git config user.name "GleanHub Bot"
-          git config user.email "bot@gleanhub"
-          git fetch origin main
-          git reset --hard origin/main
-          node scraper.js
-          git add trending.json
-          git diff --cached --quiet || git commit -m "Update trending $(date +'%Y-%m-%d')"
-          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+# 之前的方案一直用 git push 来上传文件，本质上是把Actions当成一个普通的git用户在操作，每次都要先拉代码、再提交、再推送，这个流程很容易因为远程仓库状态不一致导致冲突。
+# 新方案直接用 GitHub API 的 PUT /contents 接口，相当于直接告诉GitHub："把这个内容写到这个文件里"，GitHub自己处理版本冲突，只需要传一个 sha（文件当前的版本号）就行，完全绕开了git操作，所以不会有push冲突的问题。
+# 简单说就是：之前是"用git命令操作仓库"，现在是"直接调GitHub的接口写文件"，少了很多中间环节。
