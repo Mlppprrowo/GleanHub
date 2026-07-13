@@ -4,69 +4,69 @@
     "name": "build-your-own-x",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "description": "Master programming by recreating your favorite technologies from scratch.",
-    "stars": 524350
+    "stars": 524618
   },
   {
     "author": "sindresorhus",
     "name": "awesome",
     "url": "https://github.com/sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
-    "stars": 484077
+    "stars": 484377
   },
   {
     "author": "freeCodeCamp",
     "name": "freeCodeCamp",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-    "stars": 451601
+    "stars": 451666
   },
   {
     "author": "public-apis",
     "name": "public-apis",
     "url": "https://github.com/public-apis/public-apis",
     "description": "A collective list of free APIs",
-    "stars": 449094
+    "stars": 449448
   },
   {
     "author": "EbookFoundation",
     "name": "free-programming-books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
-    "stars": 391683
+    "stars": 391835
   },
   {
     "author": "openclaw",
     "name": "openclaw",
     "url": "https://github.com/openclaw/openclaw",
     "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
-    "stars": 382628
+    "stars": 382730
   },
   {
     "author": "nilbuild",
     "name": "developer-roadmap",
     "url": "https://github.com/nilbuild/developer-roadmap",
     "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
-    "stars": 360485
+    "stars": 360651
   },
   {
     "author": "donnemartin",
     "name": "system-design-primer",
     "url": "https://github.com/donnemartin/system-design-primer",
     "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
-    "stars": 357177
+    "stars": 357326
   },
   {
     "author": "jwasham",
     "name": "coding-interview-university",
     "url": "https://github.com/jwasham/coding-interview-university",
     "description": "A complete computer science study plan to become a software engineer.",
-    "stars": 355919
+    "stars": 356043
   },
   {
     "author": "vinta",
     "name": "awesome-python",
     "url": "https://github.com/vinta/awesome-python",
     "description": "An opinionated list of Python frameworks, libraries, tools, and resources",
-    "stars": 307623
+    "stars": 307800
   }
 ]
