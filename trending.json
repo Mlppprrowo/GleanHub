@@ -4,69 +4,69 @@
     "name": "build-your-own-x",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "description": "Master programming by recreating your favorite technologies from scratch.",
-    "stars": 541334
+    "stars": 541630
   },
   {
     "author": "sindresorhus",
     "name": "awesome",
     "url": "https://github.com/sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
-    "stars": 497847
+    "stars": 498283
   },
   {
     "author": "public-apis",
     "name": "public-apis",
     "url": "https://github.com/public-apis/public-apis",
     "description": "A collective list of free APIs",
-    "stars": 466127
+    "stars": 467279
   },
   {
     "author": "freeCodeCamp",
     "name": "freeCodeCamp",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-    "stars": 454339
+    "stars": 454374
   },
   {
     "author": "EbookFoundation",
     "name": "free-programming-books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
-    "stars": 394806
+    "stars": 394874
   },
   {
     "author": "openclaw",
     "name": "openclaw",
     "url": "https://github.com/openclaw/openclaw",
     "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
-    "stars": 386806
-  },
-  {
-    "author": "nilbuild",
-    "name": "developer-roadmap",
-    "url": "https://github.com/nilbuild/developer-roadmap",
-    "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
-    "stars": 364948
+    "stars": 386925
   },
   {
     "author": "donnemartin",
     "name": "system-design-primer",
     "url": "https://github.com/donnemartin/system-design-primer",
     "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
-    "stars": 364940
+    "stars": 365128
+  },
+  {
+    "author": "nilbuild",
+    "name": "developer-roadmap",
+    "url": "https://github.com/nilbuild/developer-roadmap",
+    "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
+    "stars": 365022
   },
   {
     "author": "jwasham",
     "name": "coding-interview-university",
     "url": "https://github.com/jwasham/coding-interview-university",
     "description": "A complete computer science study plan to become a software engineer.",
-    "stars": 359258
+    "stars": 359361
   },
   {
     "author": "vinta",
     "name": "awesome-python",
     "url": "https://github.com/vinta/awesome-python",
     "description": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
-    "stars": 314982
+    "stars": 315168
   }
 ]
