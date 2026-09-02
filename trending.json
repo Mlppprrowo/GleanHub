@@ -4,69 +4,69 @@
     "name": "build-your-own-x",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "description": "Master programming by recreating your favorite technologies from scratch.",
-    "stars": 544401
+    "stars": 544645
   },
   {
     "author": "sindresorhus",
     "name": "awesome",
     "url": "https://github.com/sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existing ones]",
-    "stars": 501790
+    "stars": 502115
   },
   {
     "author": "public-apis",
     "name": "public-apis",
     "url": "https://github.com/public-apis/public-apis",
     "description": "A collective list of free APIs",
-    "stars": 473905
+    "stars": 474313
   },
   {
     "author": "freeCodeCamp",
     "name": "freeCodeCamp",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-    "stars": 454806
+    "stars": 454862
   },
   {
     "author": "EbookFoundation",
     "name": "free-programming-books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
-    "stars": 395703
+    "stars": 395772
   },
   {
     "author": "openclaw",
     "name": "openclaw",
     "url": "https://github.com/openclaw/openclaw",
     "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
-    "stars": 388376
+    "stars": 388545
   },
   {
     "author": "donnemartin",
     "name": "system-design-primer",
     "url": "https://github.com/donnemartin/system-design-primer",
     "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
-    "stars": 367104
+    "stars": 367570
   },
   {
     "author": "nilbuild",
     "name": "developer-roadmap",
     "url": "https://github.com/nilbuild/developer-roadmap",
     "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
-    "stars": 366020
+    "stars": 366104
   },
   {
     "author": "jwasham",
     "name": "coding-interview-university",
     "url": "https://github.com/jwasham/coding-interview-university",
     "description": "A complete computer science study plan to become a software engineer.",
-    "stars": 360119
+    "stars": 360208
   },
   {
     "author": "vinta",
     "name": "awesome-python",
     "url": "https://github.com/vinta/awesome-python",
     "description": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
-    "stars": 317467
+    "stars": 317886
   }
 ]
